@@ -20,14 +20,14 @@ int main()
     {
       displayBoard();
 
-      // change turns
+      // changing player's turns
       player = (player % 2) ? 1 : 2;
 
-      // get input
+      // getting input
       printf("Player %d, enter a number: ", player);
       scanf("%d", &choice);
 
-      // set the correct character based on player turn
+      
       mark = (player == 1) ? 'X' : 'O';
 
       // set board based on user choice or invalid choice
@@ -154,7 +154,7 @@ void markBoard(char mark)
     else
     {
         printf("Invalid move ");
-
+// changing the player's turns again
         player--;
         getchar();
     }
